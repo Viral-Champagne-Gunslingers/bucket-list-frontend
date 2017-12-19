@@ -88,6 +88,7 @@ const signOutSuccess = function () {
   $('.display-items').hide()
   $('.sign-up-in').show()
   $('#item-message').hide()
+  $('#sign-up').show()
 }
 
 // sign out fail
