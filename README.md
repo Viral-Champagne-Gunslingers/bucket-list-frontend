@@ -1,4 +1,3 @@
-
 Explaination of App:
 
 Our App is a Bucklist App! Have goals you want to complete after WDI?... Sign up, sign in and add them to our app!
@@ -29,7 +28,7 @@ As a user I need to be able to view completed bucket list items
 
 Planning:
 
-As a team we used the SCUM method  to plan what we we going to do each day
+As a team we used the SCRUM method  to plan what we we going to do each da
 and continuiously check in.
 
 Tackled in sequence:
