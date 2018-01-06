@@ -26,23 +26,32 @@ const clearPass = function () {
 // }
 
 // sign up  success
+<<<<<<< HEAD
 const signUpSuccess = function (data) {
+=======
+const signUpSuccess = function () {
+  // console.log('sign up success data is ', data)
+>>>>>>> Removed console.log on KJ dev branch
   $('.message').show()
   $('#user-message').text('Signed up successfully! Please sign in')
   $('.sign-up').hide()
   clearUp()
 }
 // sign up fail
-const signUpFailure = function (error) {
+const signUpFailure = function () {
   $('.message').show()
   $('#user-message').text('Error on sign up')
-  console.log(error)
+  // console.log(error)
   clearUp()
 }
 
 // sign in success
 const signInSuccess = function (data) {
   store.user = data.user
+<<<<<<< HEAD
+=======
+  // console.log('User data is ', data)
+>>>>>>> Removed console.log on KJ dev branch
   $('.message').show()
   $('#item-message').text('Sign in success').show()
   $('.change-out').show()
@@ -58,8 +67,8 @@ const signInSuccess = function (data) {
 }
 
 // sign in fail
-const signInFailure = function (error) {
-  console.log(error)
+const signInFailure = function () {
+  // console.log(error)
   $('.message').show()
   $('#user-message').text('Error on sign in')
   clearIn()
@@ -72,8 +81,8 @@ const changePasswordSuccess = function () {
   clearPass()
 }
 // Change password fail
-const changePasswordFailure = function (error) {
-  console.log(error)
+const changePasswordFailure = function () {
+  // console.log(error)
   $('.message').show()
   $('#user-message').text('Password Change Failiure')
   clearPass()
@@ -92,10 +101,10 @@ const signOutSuccess = function () {
 }
 
 // sign out fail
-const signOutFailure = function (error) {
+const signOutFailure = function () {
   $('.message').show()
   $('#user-message').text('Still here')
-  console.log(error)
+  // console.log(error)
 }
 
 module.exports = {

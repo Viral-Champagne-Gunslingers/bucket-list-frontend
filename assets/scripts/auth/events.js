@@ -20,6 +20,10 @@ const onSignUp = function (event) {
 // on sign in
 const onSignIn = function (event) {
   const data = getFormFields(this)
+<<<<<<< HEAD
+=======
+  // console.log(event)
+>>>>>>> Removed console.log on KJ dev branch
   event.preventDefault()
   authApi.signIn(data)
     .then(authUi.signInSuccess)
@@ -29,6 +33,10 @@ const onSignIn = function (event) {
 // on change password
 const onChangePassword = function (event) {
   const data = getFormFields(this)
+<<<<<<< HEAD
+=======
+  // console.log(data)
+>>>>>>> Removed console.log on KJ dev branch
   event.preventDefault()
   authApi.changePassword(data)
     .then(authUi.changePasswordSuccess)
