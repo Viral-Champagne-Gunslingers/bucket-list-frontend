@@ -33,10 +33,9 @@ const signUpSuccess = function (data) {
   clearUp()
 }
 // sign up fail
-const signUpFailure = function (error) {
+const signUpFailure = function () {
   $('.message').show()
   $('#user-message').text('Error on sign up')
-  console.log(error)
   clearUp()
 }
 
