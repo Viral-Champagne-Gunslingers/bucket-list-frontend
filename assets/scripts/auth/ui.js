@@ -26,12 +26,7 @@ const clearPass = function () {
 // }
 
 // sign up  success
-<<<<<<< HEAD
-const signUpSuccess = function (data) {
-=======
 const signUpSuccess = function () {
-  // console.log('sign up success data is ', data)
->>>>>>> Removed console.log on KJ dev branch
   $('.message').show()
   $('#user-message').text('Signed up successfully! Please sign in')
   $('.sign-up').hide()
@@ -41,17 +36,12 @@ const signUpSuccess = function () {
 const signUpFailure = function () {
   $('.message').show()
   $('#user-message').text('Error on sign up')
-  // console.log(error)
   clearUp()
 }
 
 // sign in success
 const signInSuccess = function (data) {
   store.user = data.user
-<<<<<<< HEAD
-=======
-  // console.log('User data is ', data)
->>>>>>> Removed console.log on KJ dev branch
   $('.message').show()
   $('#item-message').text('Sign in success').show()
   $('.change-out').show()
