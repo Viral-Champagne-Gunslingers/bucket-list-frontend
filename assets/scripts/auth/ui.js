@@ -26,7 +26,7 @@ const clearPass = function () {
 // }
 
 // sign up  success
-const signUpSuccess = function () {
+const signUpSuccess = function (data) {
   $('.message').show()
   $('#user-message').text('Signed up successfully! Please sign in')
   $('.sign-up').hide()
@@ -48,17 +48,17 @@ const signInSuccess = function (data) {
   $('.sign-up-in').hide()
   $('.title').hide()
   $('.todo').show()
-  itemsApi.showItem()
-    .then(itemsUi.showItemSuccess)
-    .catch(itemsUi.showItemFailure)
-  clearIn()
+  $('.display-items').show()
+  // itemsApi.showItem()
+  //   .then(itemsUi.showItemSuccess)
+  //   .catch(itemsUi.showItemFailure)
+  // clearIn()
   itemsApi.showItem()
     .then(itemsUi.findItems)
 }
 
 // sign in fail
 const signInFailure = function () {
-  // console.log(error)
   $('.message').show()
   $('#user-message').text('Error on sign in')
   clearIn()
@@ -72,29 +72,27 @@ const changePasswordSuccess = function () {
 }
 // Change password fail
 const changePasswordFailure = function () {
-  // console.log(error)
   $('.message').show()
   $('#user-message').text('Password Change Failiure')
   clearPass()
 }
 // sign out success
 const signOutSuccess = function () {
-  store.user = null
+  // store.user = null
   $('.message').show()
   $('#user-message').text('Signed out! Sign in to create list!')
   $('.change-out').hide()
   $('.todo').hide()
   $('.display-items').hide()
   $('.sign-up-in').show()
+  $('.sign-up').show()
   $('#item-message').hide()
-  $('#sign-up').show()
 }
 
 // sign out fail
 const signOutFailure = function () {
   $('.message').show()
   $('#user-message').text('Still here')
-  // console.log(error)
 }
 
 module.exports = {
